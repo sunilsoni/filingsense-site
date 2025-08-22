@@ -14,8 +14,13 @@
         <path d="M36 108h96a40 40 0 0 0 0-80H36v24h88a8 8 0 1 1 0 16H36z" fill="#fff"/>
     </g>
     <!-- wordmark (uses system font stack; renders fine on web/PNG export) -->
-    <text x="320" y="260" fill="#ffffff" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-weight="800" font-size="72">FilingSense</text>
-    <text x="320" y="308" fill="#8bd5d4" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-weight="600" font-size="22" opacity="0.95">
+    <text x="320" y="260" fill="#ffffff"
+          font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-weight="800"
+          font-size="72">FilingSense
+    </text>
+    <text x="320" y="308" fill="#8bd5d4"
+          font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-weight="600"
+          font-size="22" opacity="0.95">
         Your Trusted Filing Partner
     </text>
 </svg>
