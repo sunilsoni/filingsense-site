@@ -2,46 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Contact Us | FilingSense</title>
-    <meta name="description" content="Contact FilingSense for GST, Income Tax, Accounting, Audit, Company Registration, Payroll and Compliance.">
-    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <meta content="Contact FilingSense for GST, Income Tax, Accounting, Audit, Company Registration, Payroll and Compliance."
+          name="description">
+    <link href="/assets/favicon.svg" rel="icon" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root { --brand:#0f172a; --accent:#0ea5a4; }
-        body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans"; }
-        .display { font-family: "Playfair Display", serif; }
-        .container-max { max-width: 1200px; }
+        :root {
+            --brand: #0f172a;
+            --accent: #0ea5a4;
+        }
+
+        body {
+            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans";
+        }
+
+        .display {
+            font-family: "Playfair Display", serif;
+        }
+
+        .container-max {
+            max-width: 1200px;
+        }
     </style>
 </head>
 <body class="bg-white text-slate-800">
 <!-- NAV (same as index.html) -->
 <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b">
     <div class="mx-auto container-max px-4 py-3 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-3">
-            <img src="/assets/logo.svg" alt="FilingSense logo" class="h-9 w-9"/>
+        <a class="flex items-center gap-3" href="/">
+            <img alt="FilingSense logo" class="h-9 w-9" src="/assets/logo.svg"/>
             <span class="font-extrabold text-slate-900">FilingSense</span>
         </a>
         <nav class="hidden md:flex items-center gap-6 text-sm">
-            <a href="/#services" class="hover:text-slate-900">Services</a>
-            <a href="/pricing.html" class="hover:text-slate-900">Pricing</a>
-            <a href="/resources.html" class="hover:text-slate-900">Resources</a>
-            <a href="/about.html" class="hover:text-slate-900">About</a>
-            <a href="/contact.html" class="hover:text-slate-900">Contact</a>
-            <a href="https://wa.me/919575515735" class="px-4 py-2 rounded-xl bg-slate-900 text-white">WhatsApp Us</a>
+            <a class="hover:text-slate-900" href="/#services">Services</a>
+            <a class="hover:text-slate-900" href="/pricing.html">Pricing</a>
+            <a class="hover:text-slate-900" href="/resources.html">Resources</a>
+            <a class="hover:text-slate-900" href="/about.html">About</a>
+            <a class="hover:text-slate-900" href="/contact.html">Contact</a>
+            <a class="px-4 py-2 rounded-xl bg-slate-900 text-white" href="https://wa.me/919575515735">WhatsApp Us</a>
         </nav>
-        <button class="md:hidden p-2 rounded-lg border" onclick="document.getElementById('mnav').classList.toggle('hidden')">Menu</button>
+        <button class="md:hidden p-2 rounded-lg border"
+                onclick="document.getElementById('mnav').classList.toggle('hidden')">Menu
+        </button>
     </div>
-    <div id="mnav" class="md:hidden hidden border-t bg-white">
+    <div class="md:hidden hidden border-t bg-white" id="mnav">
         <div class="mx-auto container-max px-4 py-2 flex flex-col gap-2 text-sm">
-            <a href="/#services" class="py-2">Services</a>
-            <a href="/pricing.html" class="py-2">Pricing</a>
-            <a href="/resources.html" class="py-2">Resources</a>
-            <a href="/about.html" class="py-2">About</a>
-            <a href="/contact.html" class="py-2">Contact</a>
-            <a href="https://wa.me/919575515735" class="py-2">WhatsApp Us</a>
+            <a class="py-2" href="/#services">Services</a>
+            <a class="py-2" href="/pricing.html">Pricing</a>
+            <a class="py-2" href="/resources.html">Resources</a>
+            <a class="py-2" href="/about.html">About</a>
+            <a class="py-2" href="/contact.html">Contact</a>
+            <a class="py-2" href="https://wa.me/919575515735">WhatsApp Us</a>
         </div>
     </div>
 </header>
@@ -49,15 +65,16 @@
 <!-- PAGE CONTENT -->
 <section class="mx-auto container-max px-4 py-12">
     <h1 class="display text-4xl md:text-5xl text-slate-900">Contact Us</h1>
-    <p class="mt-3 text-slate-600 max-w-2xl">Tell us a bit about your needs. We typically respond within 1 business day.</p>
+    <p class="mt-3 text-slate-600 max-w-2xl">Tell us a bit about your needs. We typically respond within 1 business
+        day.</p>
 
     <div class="mt-8 grid md:grid-cols-2 gap-8">
         <!-- ✅ Replace the action URL below with your real Formspree endpoint -->
-        <form action="https://formspree.io/f/mvgqeqrr" method="POST" class="space-y-4" id="contactForm">
-            <input type="hidden" name="_subject" value="New contact from filingsense.com">
-            <input type="hidden" name="_redirect" value="https://filingsense.com/thank-you.html">
+        <form action="https://formspree.io/f/mvgqeqrr" class="space-y-4" id="contactForm" method="POST">
+            <input name="_subject" type="hidden" value="New contact from filingsense.com">
+            <input name="_redirect" type="hidden" value="https://filingsense.com/thank-you.html">
             <!-- Honeypot for spam -->
-            <input type="text" name="_gotcha" style="display:none">
+            <input name="_gotcha" style="display:none" type="text">
 
             <div>
                 <label class="block text-sm font-medium">Name</label>
@@ -65,7 +82,7 @@
             </div>
             <div>
                 <label class="block text-sm font-medium">Email</label>
-                <input type="email" class="mt-1 w-full rounded-xl border px-3 py-2" name="email" required>
+                <input class="mt-1 w-full rounded-xl border px-3 py-2" name="email" required type="email">
             </div>
             <div>
                 <label class="block text-sm font-medium">Phone</label>
@@ -85,12 +102,13 @@
             </div>
             <div>
                 <label class="block text-sm font-medium">Message</label>
-                <textarea class="mt-1 w-full rounded-xl border px-3 py-2" rows="5" name="message" placeholder="Tell us about your requirements"></textarea>
+                <textarea class="mt-1 w-full rounded-xl border px-3 py-2" name="message" placeholder="Tell us about your requirements"
+                          rows="5"></textarea>
             </div>
             <button class="px-5 py-3 rounded-xl bg-slate-900 text-white" type="submit">Send Message</button>
 
             <!-- Inline success/fail message (works even without redirect when JS is enabled) -->
-            <p id="formStatus" class="text-sm mt-2 text-slate-600"></p>
+            <p class="text-sm mt-2 text-slate-600" id="formStatus"></p>
         </form>
 
         <div class="space-y-4">
@@ -116,7 +134,7 @@
     <div class="mx-auto container-max px-4 py-12 grid md:grid-cols-4 gap-8">
         <div>
             <div class="flex items-center gap-3">
-                <img src="/assets/logo.svg" class="h-9 w-9" alt="FilingSense logo" />
+                <img alt="FilingSense logo" class="h-9 w-9" src="/assets/logo.svg"/>
                 <span class="font-extrabold">FilingSense</span>
             </div>
             <p class="mt-3 text-sm text-slate-600">Your trusted filing partner.</p>
@@ -124,20 +142,20 @@
         <div>
             <h4 class="font-semibold">Services</h4>
             <ul class="mt-3 space-y-2 text-sm text-slate-600">
-                <li><a href="/services/taxation.html" class="hover:text-slate-900">Taxation (GST & IT)</a></li>
-                <li><a href="/services/accounting.html" class="hover:text-slate-900">Accounting & Bookkeeping</a></li>
-                <li><a href="/services/audit.html" class="hover:text-slate-900">Auditing & Assurance</a></li>
-                <li><a href="/services/incorporation.html" class="hover:text-slate-900">Company Formation</a></li>
-                <li><a href="/services/compliance.html" class="hover:text-slate-900">Compliance & Corporate Law</a></li>
+                <li><a class="hover:text-slate-900" href="/services/taxation.html">Taxation (GST & IT)</a></li>
+                <li><a class="hover:text-slate-900" href="/services/accounting.html">Accounting & Bookkeeping</a></li>
+                <li><a class="hover:text-slate-900" href="/services/audit.html">Auditing & Assurance</a></li>
+                <li><a class="hover:text-slate-900" href="/services/incorporation.html">Company Formation</a></li>
+                <li><a class="hover:text-slate-900" href="/services/compliance.html">Compliance & Corporate Law</a></li>
             </ul>
         </div>
         <div>
             <h4 class="font-semibold">Company</h4>
             <ul class="mt-3 space-y-2 text-sm text-slate-600">
-                <li><a href="/about.html" class="hover:text-slate-900">About</a></li>
-                <li><a href="/resources.html" class="hover:text-slate-900">Resources</a></li>
-                <li><a href="/pricing.html" class="hover:text-slate-900">Pricing</a></li>
-                <li><a href="/contact.html" class="hover:text-slate-900">Contact</a></li>
+                <li><a class="hover:text-slate-900" href="/about.html">About</a></li>
+                <li><a class="hover:text-slate-900" href="/resources.html">Resources</a></li>
+                <li><a class="hover:text-slate-900" href="/pricing.html">Pricing</a></li>
+                <li><a class="hover:text-slate-900" href="/contact.html">Contact</a></li>
             </ul>
         </div>
         <div>
