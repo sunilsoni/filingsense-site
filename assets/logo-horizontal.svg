@@ -1,0 +1,21 @@
+<!-- /assets/logo-horizontal.svg (1200x630, Open Graph safe) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img">
+    <title>FilingSense</title>
+    <rect width="1200" height="630" fill="#0f172a"/>
+    <!-- icon tile -->
+    <defs>
+        <linearGradient id="gH" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0ea5a4"/>
+            <stop offset="1" stop-color="#0f172a"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(120 165)">
+        <rect x="0" y="0" width="160" height="160" rx="36" fill="url(#gH)"/>
+        <path d="M36 108h96a40 40 0 0 0 0-80H36v24h88a8 8 0 1 1 0 16H36z" fill="#fff"/>
+    </g>
+    <!-- wordmark (uses system font stack; renders fine on web/PNG export) -->
+    <text x="320" y="260" fill="#ffffff" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-weight="800" font-size="72">FilingSense</text>
+    <text x="320" y="308" fill="#8bd5d4" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-weight="600" font-size="22" opacity="0.95">
+        Your Trusted Filing Partner
+    </text>
+</svg>

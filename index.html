@@ -15,7 +15,18 @@
     <meta content="website" property="og:type">
     <meta content="https://filingsense.com/assets/logo.svg" property="og:image">
 
-    <link href="/assets/favicon.svg" rel="icon" type="image/svg+xml">
+     <!-- Favicons -->
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/logo.png"> <!-- 512x512 PNG is fine -->
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="FilingSense">
+    <meta property="og:description" content="Your trusted filing partner for GST, Income Tax, Accounting, and Compliance.">
+    <meta property="og:image" content="https://filingsense.com/assets/logo-og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://filingsense.com/assets/logo-og.png">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap"
           rel="stylesheet">
@@ -370,11 +381,15 @@
 <!-- LocalBusiness / AccountingService schema -->
 <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "AccountingService",
-        "name": "FilingSense",
-        "image": "https://filingsense.com/assets/logo.svg",
-        "url": "https://filingsense.com/",
+        "@context":"https://schema.org",
+        "@type":"Organization",
+        "name":"FilingSense",
+        "url":"https://filingsense.com/",
+        "logo":"https://filingsense.com/assets/logo.png",
+        "sameAs":[
+            "https://www.linkedin.com/company/filingsense",
+            "https://x.com/filingsense"
+        ],
         "telephone": "+91-95755-15735",
         "address": {
             "@type": "PostalAddress",
