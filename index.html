@@ -32,6 +32,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap"
           rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script src="/assets/js/nav.js"></script>
     <script>
         /* Tailwind CDN config: brand palette */
@@ -81,49 +82,52 @@
         <!-- Desktop nav -->
         <nav class="hidden md:flex items-center gap-6 text-sm">
             <!-- Services dropdown (desktop) -->
-            <!-- Services dropdown (click to open) -->
-            <div class="relative" id="svc-wrap">
-                <button id="svc-btn" type="button"
-                        class="inline-flex items-center gap-1 hover:text-slate-900 focus:outline-none"
-                        aria-haspopup="true" aria-expanded="false" aria-controls="svc-panel">
+            <div class="relative group">
+                <button
+                        aria-expanded="false"
+                        aria-haspopup="true" class="inline-flex items-center gap-1 hover:text-slate-900">
                     Services
-                    <svg class="w-4 h-4 opacity-70" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.096l3.71-3.866a.75.75 0 111.08 1.04l-4.24 4.42a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                    <svg aria-hidden="true" class="w-4 h-4 opacity-70" fill="currentColor" viewBox="0 0 20 20">
+                        <path clip-rule="evenodd"
+                              d="M5.23 7.21a.75.75 0 011.06.02L10 11.096l3.71-3.866a.75.75 0 111.08 1.04l-4.24 4.42a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                              fill-rule="evenodd"/>
                     </svg>
                 </button>
 
-                <div id="svc-panel"
-                     class="hidden absolute left-0 top-full mt-3 w-[420px] rounded-2xl border bg-white shadow-lg p-3 z-[100]"
-                     role="menu" aria-labelledby="svc-btn">
+                <!-- Dropdown panel -->
+                <div
+                        class="absolute left-0 mt-3 w-[420px] rounded-2xl border bg-white shadow-lg p-3
+                 opacity-0 pointer-events-none translate-y-1 transition
+                 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0">
                     <div class="grid grid-cols-2 gap-2 text-sm">
-                        <a href="/services/taxation.html" class="block p-3 rounded-xl hover:bg-slate-50">
-                            <div class="font-semibold text-slate-900">Taxation (GST &amp; IT)</div>
+                        <a class="block p-3 rounded-xl hover:bg-slate-50" href="/services/taxation.html">
+                            <div class="font-semibold text-slate-900">Taxation (GST & IT)</div>
                             <div class="text-slate-600 mt-0.5">Returns, planning, notices</div>
                         </a>
-                        <a href="/services/accounting.html" class="block p-3 rounded-xl hover:bg-slate-50">
-                            <div class="font-semibold text-slate-900">Accounting &amp; Bookkeeping</div>
+                        <a class="block p-3 rounded-xl hover:bg-slate-50" href="/services/accounting.html">
+                            <div class="font-semibold text-slate-900">Accounting & Bookkeeping</div>
                             <div class="text-slate-600 mt-0.5">Monthly books, MIS</div>
                         </a>
-                        <a href="/services/audit.html" class="block p-3 rounded-xl hover:bg-slate-50">
-                            <div class="font-semibold text-slate-900">Auditing &amp; Assurance</div>
+                        <a class="block p-3 rounded-xl hover:bg-slate-50" href="/services/audit.html">
+                            <div class="font-semibold text-slate-900">Auditing & Assurance</div>
                             <div class="text-slate-600 mt-0.5">Statutory, internal audits</div>
                         </a>
-                        <a href="/services/incorporation.html" class="block p-3 rounded-xl hover:bg-slate-50">
+                        <a class="block p-3 rounded-xl hover:bg-slate-50" href="/services/incorporation.html">
                             <div class="font-semibold text-slate-900">Company Formation</div>
                             <div class="text-slate-600 mt-0.5">Pvt Ltd / LLP / OPC</div>
                         </a>
-                        <a href="/services/compliance.html" class="block p-3 rounded-xl hover:bg-slate-50">
-                            <div class="font-semibold text-slate-900">Compliance &amp; Corporate Law</div>
+                        <a class="block p-3 rounded-xl hover:bg-slate-50" href="/services/compliance.html">
+                            <div class="font-semibold text-slate-900">Compliance & Corporate Law</div>
                             <div class="text-slate-600 mt-0.5">ROC, FCRA, governance</div>
                         </a>
-                        <a href="/services/advisory.html" class="block p-3 rounded-xl hover:bg-slate-50">
+                        <a class="block p-3 rounded-xl hover:bg-slate-50" href="/services/advisory.html">
                             <div class="font-semibold text-slate-900">Business Advisory</div>
-                            <div class="text-slate-600 mt-0.5">Strategy &amp; performance</div>
+                            <div class="text-slate-600 mt-0.5">Strategy & performance</div>
                         </a>
                     </div>
                     <div class="mt-2 px-2">
-                        <a href="/contact.html"
-                           class="inline-flex items-center gap-2 text-xs px-3 py-2 rounded-lg bg-slate-900 text-white hover:opacity-90">
+                        <a class="inline-flex items-center gap-2 text-xs px-3 py-2 rounded-lg bg-slate-900 text-white hover:opacity-90"
+                           href="/contact.html">
                             Talk to a CA
                         </a>
                     </div>
