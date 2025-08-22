@@ -2,118 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>FilingSense | Your Trusted Filing Partner</title>
-    <meta content="Auditing & Assurance, GST & Income Tax, Accounting & Bookkeeping, Company Formation, Payroll, Corporate Law, Compliance, and CFO services."
-          name="description">
-    <link href="/assets/favicon.svg" rel="icon" type="image/svg+xml">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap"
-          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taxation (GST & Income Tax) | FilingSense</title>
+    <meta name="description" content="End-to-end GST & Income Tax: registrations, monthly/quarterly returns, annual filings, assessments & notices, and tax planning.">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root {
-            --brand: #0f172a;
-            --accent: #0ea5a4;
-        }
-
-        body {
-            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans";
-        }
-
-        .display {
-            font-family: "Playfair Display", serif;
-        }
-
-        .container-max {
-            max-width: 1200px;
-        }
+        :root { --brand:#0f172a; --accent:#0ea5a4; }
+        body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans"; }
+        .display { font-family: "Playfair Display", serif; }
+        .container-max { max-width: 1200px; }
     </style>
 </head>
 <body class="bg-white text-slate-800">
+
 <!-- HEADER with Services dropdown -->
 <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b">
     <div class="mx-auto container-max px-4 py-3 flex items-center justify-between">
-        <!-- Brand -->
         <a href="/" class="flex items-center gap-3">
             <img src="/assets/logo.svg" alt="FilingSense logo" class="h-9 w-9"/>
             <span class="font-extrabold text-slate-900">FilingSense</span>
         </a>
-
-        <!-- Desktop nav -->
         <nav class="hidden md:flex items-center gap-6 text-sm">
-            <!-- Services dropdown (desktop) -->
             <div class="relative group">
-                <button
-                        class="inline-flex items-center gap-1 hover:text-slate-900"
-                        aria-haspopup="true" aria-expanded="false">
+                <button class="inline-flex items-center gap-1 hover:text-slate-900" aria-haspopup="true" aria-expanded="false">
                     Services
                     <svg class="w-4 h-4 opacity-70" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.096l3.71-3.866a.75.75 0 111.08 1.04l-4.24 4.42a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
                     </svg>
                 </button>
-
-                <!-- Dropdown panel -->
-                <div
-                        class="absolute left-0 mt-3 w-[420px] rounded-2xl border bg-white shadow-lg p-3
-                 opacity-0 pointer-events-none translate-y-1 transition
-                 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0">
+                <div class="absolute left-0 mt-3 w-[420px] rounded-2xl border bg-white shadow-lg p-3 opacity-0 pointer-events-none translate-y-1 transition group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0">
                     <div class="grid grid-cols-2 gap-2 text-sm">
-                        <a href="/services/taxation.html" class="block p-3 rounded-xl hover:bg-slate-50">
-                            <div class="font-semibold text-slate-900">Taxation (GST & IT)</div>
-                            <div class="text-slate-600 mt-0.5">Returns, planning, notices</div>
-                        </a>
-                        <a href="/services/accounting.html" class="block p-3 rounded-xl hover:bg-slate-50">
-                            <div class="font-semibold text-slate-900">Accounting & Bookkeeping</div>
-                            <div class="text-slate-600 mt-0.5">Monthly books, MIS</div>
-                        </a>
-                        <a href="/services/audit.html" class="block p-3 rounded-xl hover:bg-slate-50">
-                            <div class="font-semibold text-slate-900">Auditing & Assurance</div>
-                            <div class="text-slate-600 mt-0.5">Statutory, internal audits</div>
-                        </a>
-                        <a href="/services/incorporation.html" class="block p-3 rounded-xl hover:bg-slate-50">
-                            <div class="font-semibold text-slate-900">Company Formation</div>
-                            <div class="text-slate-600 mt-0.5">Pvt Ltd / LLP / OPC</div>
-                        </a>
-                        <a href="/services/compliance.html" class="block p-3 rounded-xl hover:bg-slate-50">
-                            <div class="font-semibold text-slate-900">Compliance & Corporate Law</div>
-                            <div class="text-slate-600 mt-0.5">ROC, FCRA, governance</div>
-                        </a>
-                        <a href="/services/advisory.html" class="block p-3 rounded-xl hover:bg-slate-50">
-                            <div class="font-semibold text-slate-900">Business Advisory</div>
-                            <div class="text-slate-600 mt-0.5">Strategy & performance</div>
-                        </a>
+                        <a href="/services/taxation.html" class="block p-3 rounded-xl hover:bg-slate-50"><div class="font-semibold text-slate-900">Taxation (GST & IT)</div><div class="text-slate-600 mt-0.5">Returns, planning, notices</div></a>
+                        <a href="/services/accounting.html" class="block p-3 rounded-xl hover:bg-slate-50"><div class="font-semibold text-slate-900">Accounting & Bookkeeping</div><div class="text-slate-600 mt-0.5">Monthly books, MIS</div></a>
+                        <a href="/services/audit.html" class="block p-3 rounded-xl hover:bg-slate-50"><div class="font-semibold text-slate-900">Auditing & Assurance</div><div class="text-slate-600 mt-0.5">Statutory, internal audits</div></a>
+                        <a href="/services/incorporation.html" class="block p-3 rounded-xl hover:bg-slate-50"><div class="font-semibold text-slate-900">Company Formation</div><div class="text-slate-600 mt-0.5">Pvt Ltd / LLP / OPC</div></a>
+                        <a href="/services/compliance.html" class="block p-3 rounded-xl hover:bg-slate-50"><div class="font-semibold text-slate-900">Compliance & Corporate Law</div><div class="text-slate-600 mt-0.5">ROC, FCRA, governance</div></a>
+                        <a href="/services/advisory.html" class="block p-3 rounded-xl hover:bg-slate-50"><div class="font-semibold text-slate-900">Business Advisory</div><div class="text-slate-600 mt-0.5">Strategy & performance</div></a>
                     </div>
-                    <div class="mt-2 px-2">
-                        <a href="/contact.html" class="inline-flex items-center gap-2 text-xs px-3 py-2 rounded-lg bg-slate-900 text-white hover:opacity-90">
-                            Talk to a CA
-                        </a>
-                    </div>
+                    <div class="mt-2 px-2"><a href="/contact.html" class="inline-flex items-center gap-2 text-xs px-3 py-2 rounded-lg bg-slate-900 text-white hover:opacity-90">Talk to a CA</a></div>
                 </div>
             </div>
-
             <a href="/pricing.html" class="hover:text-slate-900">Pricing</a>
             <a href="/resources.html" class="hover:text-slate-900">Resources</a>
             <a href="/about.html" class="hover:text-slate-900">About</a>
             <a href="/contact.html" class="hover:text-slate-900">Contact</a>
             <a href="https://wa.me/919575515735" class="px-4 py-2 rounded-xl bg-slate-900 text-white hover:opacity-90">WhatsApp Us</a>
         </nav>
-
-        <!-- Mobile menu button -->
-        <button class="md:hidden p-2 rounded-lg border" onclick="document.getElementById('mnav').classList.toggle('hidden')" aria-label="Open menu">
-            Menu
-        </button>
+        <button class="md:hidden p-2 rounded-lg border" onclick="document.getElementById('mnav').classList.toggle('hidden')" aria-label="Open menu">Menu</button>
     </div>
-
-    <!-- Mobile nav -->
     <div id="mnav" class="md:hidden hidden border-t bg-white">
         <div class="mx-auto container-max px-4 py-2 text-sm">
-            <!-- Services accordion (mobile) -->
             <details class="border-b py-2">
-                <summary class="cursor-pointer font-medium flex items-center justify-between">
-                    Services
-                    <span class="ml-3">▾</span>
-                </summary>
+                <summary class="cursor-pointer font-medium flex items-center justify-between">Services <span class="ml-3">▾</span></summary>
                 <div class="mt-2 grid grid-cols-1">
                     <a href="/services/taxation.html" class="py-2 pl-3 block hover:bg-slate-50 rounded-lg">Taxation (GST & IT)</a>
                     <a href="/services/accounting.html" class="py-2 pl-3 block hover:bg-slate-50 rounded-lg">Accounting & Bookkeeping</a>
@@ -123,7 +66,6 @@
                     <a href="/services/advisory.html" class="py-2 pl-3 block hover:bg-slate-50 rounded-lg">Business Advisory</a>
                 </div>
             </details>
-
             <a href="/pricing.html" class="py-2 block">Pricing</a>
             <a href="/resources.html" class="py-2 block">Resources</a>
             <a href="/about.html" class="py-2 block">About</a>
@@ -133,26 +75,132 @@
     </div>
 </header>
 
-
-<section class="mx-auto container-max px-4 py-12">
+<!-- HERO -->
+<section class="mx-auto container-max px-4 pt-12 pb-6">
     <h1 class="display text-4xl md:text-5xl text-slate-900">Taxation (GST & Income Tax)</h1>
-    <div class="mt-6 prose prose-slate max-w-none">
-        <p>End-to-end GST & IT planning, returns, audits, and notices handling.</p>
-        <ul>
-            <li>GSTR‑3B, GSTR‑1, annual return</li>
-            <li>ITR filing for individuals & firms</li>
-            <li>TDS/TCS compliance</li>
-        </ul>
-        <p class="mt-6"><a class="inline-block px-5 py-3 rounded-xl bg-slate-900 text-white" href="/contact.html">Talk
-            to a CA</a></p>
+    <p class="mt-3 text-slate-600 max-w-2xl">
+        Registrations, monthly/quarterly returns, annual filings, assessments & notices—handled end‑to‑end with proactive planning.
+    </p>
+    <div class="mt-5 flex flex-wrap gap-2 text-xs">
+        <span class="px-2 py-1 rounded-full bg-slate-100">GSTR‑1 / 3B</span>
+        <span class="px-2 py-1 rounded-full bg-slate-100">ITR & TDS</span>
+        <span class="px-2 py-1 rounded-full bg-slate-100">Registrations</span>
+        <span class="px-2 py-1 rounded-full bg-slate-100">Notices & Assessments</span>
+        <span class="px-2 py-1 rounded-full bg-slate-100">Tax Planning</span>
     </div>
 </section>
 
+<!-- OFFERING -->
+<section class="mx-auto container-max px-4 py-10">
+    <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border">
+            <h3 class="font-semibold text-slate-900">GST</h3>
+            <ul class="mt-3 text-sm text-slate-700 space-y-2">
+                <li>GST registration & amendments</li>
+                <li>Monthly/Quarterly returns (GSTR‑1/3B)</li>
+                <li>Reconciliation with GSTR‑2B</li>
+                <li>Annual return (GSTR‑9/9C, where applicable)</li>
+                <li>Notices & department liaison</li>
+            </ul>
+        </div>
+        <div class="p-6 rounded-2xl border">
+            <h3 class="font-semibold text-slate-900">Income Tax</h3>
+            <ul class="mt-3 text-sm text-slate-700 space-y-2">
+                <li>ITR filing (Individuals, Firms, LLPs, Companies)</li>
+                <li>Advance tax & TDS calculations</li>
+                <li>Tax audit support (3CD data)</li>
+                <li>Scrutiny/appeal support with documentation</li>
+            </ul>
+        </div>
+        <div class="p-6 rounded-2xl border">
+            <h3 class="font-semibold text-slate-900">Advisory & Planning</h3>
+            <ul class="mt-3 text-sm text-slate-700 space-y-2">
+                <li>Tax‑efficient payouts (salary, dividend, drawings)</li>
+                <li>ITC optimization & risk mitigation</li>
+                <li>Transaction structuring</li>
+                <li>Due date calendar & reminders</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section class="mx-auto container-max px-4 pb-10">
+    <h2 class="text-2xl font-bold text-slate-900">Our filing cadence</h2>
+    <div class="mt-6 grid md:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl border">
+            <div class="text-xs px-2 py-1 rounded-full bg-slate-100 inline-block">1</div>
+            <h3 class="mt-3 font-semibold">Data intake</h3>
+            <p class="mt-2 text-sm text-slate-700">Invoices, ledgers, TDS/TCS, bank statements, 2B download.</p>
+        </div>
+        <div class="p-6 rounded-2xl border">
+            <div class="text-xs px-2 py-1 rounded-full bg-slate-100 inline-block">2</div>
+            <h3 class="mt-3 font-semibold">Reconciliation</h3>
+            <p class="mt-2 text-sm text-slate-700">Match sales/purchases; ITC eligibility; variance notes.</p>
+        </div>
+        <div class="p-6 rounded-2xl border">
+            <div class="text-xs px-2 py-1 rounded-full bg-slate-100 inline-block">3</div>
+            <h3 class="mt-3 font-semibold">Review & Pay</h3>
+            <p class="mt-2 text-sm text-slate-700">Share draft returns, confirm liabilities, assist challan payment.</p>
+        </div>
+        <div class="p-6 rounded-2xl border">
+            <div class="text-xs px-2 py-1 rounded-full bg-slate-100 inline-block">4</div>
+            <h3 class="mt-3 font-semibold">File & Archive</h3>
+            <p class="mt-2 text-sm text-slate-700">File returns, store proofs, and schedule next reminders.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="mx-auto container-max px-4 pb-16">
+    <div class="p-8 bg-slate-50 rounded-2xl border">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+                <h3 class="text-xl font-bold">Want zero‑stress tax filings?</h3>
+                <p class="text-slate-600 mt-1">Share last month’s data—we’ll take it from there.</p>
+            </div>
+            <div class="flex gap-3">
+                <a class="px-5 py-3 rounded-xl bg-slate-900 text-white hover:opacity-90" href="/contact.html">Talk to a CA</a>
+                <a class="px-5 py-3 rounded-xl border border-slate-300 hover:bg-slate-50" href="https://wa.me/919575515735">WhatsApp Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="mx-auto container-max px-4 pb-20">
+    <h2 class="text-2xl font-bold text-slate-900">FAQs</h2>
+    <div class="mt-4 space-y-3">
+        <details class="group rounded-xl border p-5 bg-white">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-semibold">
+                How quickly can you register GST?
+                <span class="ml-4 transition group-open:rotate-180">▾</span>
+            </summary>
+            <div class="mt-3 text-slate-700">Typically 2–5 working days after complete documents and verification.</div>
+        </details>
+        <details class="group rounded-xl border p-5 bg-white">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-semibold">
+                Do you handle notices and assessments?
+                <span class="ml-4 transition group-open:rotate-180">▾</span>
+            </summary>
+            <div class="mt-3 text-slate-700">Yes, we prepare replies, documentation and liaise with the department.</div>
+        </details>
+        <details class="group rounded-xl border p-5 bg-white">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-semibold">
+                Can you align with our accounting cycle?
+                <span class="ml-4 transition group-open:rotate-180">▾</span>
+            </summary>
+            <div class="mt-3 text-slate-700">Yes—our return calendar syncs with your bookkeeping and MIS cadence.</div>
+        </details>
+    </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="border-t">
     <div class="mx-auto container-max px-4 py-12 grid md:grid-cols-4 gap-8">
         <div>
             <div class="flex items-center gap-3">
-                <img alt="FilingSense logo" class="h-9 w-9" src="/assets/logo.svg"/>
+                <img src="/assets/logo.svg" class="h-9 w-9" alt="FilingSense logo" />
                 <span class="font-extrabold">FilingSense</span>
             </div>
             <p class="mt-3 text-sm text-slate-600">Your trusted filing partner.</p>
@@ -160,26 +208,26 @@
         <div>
             <h4 class="font-semibold">Services</h4>
             <ul class="mt-3 space-y-2 text-sm text-slate-600">
-                <li><a class="hover:text-slate-900" href="/services/taxation.html">Taxation (GST & IT)</a></li>
-                <li><a class="hover:text-slate-900" href="/services/accounting.html">Accounting & Bookkeeping</a></li>
-                <li><a class="hover:text-slate-900" href="/services/audit.html">Auditing & Assurance</a></li>
-                <li><a class="hover:text-slate-900" href="/services/incorporation.html">Company Formation</a></li>
-                <li><a class="hover:text-slate-900" href="/services/compliance.html">Compliance & Corporate Law</a></li>
+                <li><a href="/services/taxation.html" class="hover:text-slate-900">Taxation (GST & IT)</a></li>
+                <li><a href="/services/accounting.html" class="hover:text-slate-900">Accounting & Bookkeeping</a></li>
+                <li><a href="/services/audit.html" class="hover:text-slate-900">Auditing & Assurance</a></li>
+                <li><a href="/services/incorporation.html" class="hover:text-slate-900">Company Formation</a></li>
+                <li><a href="/services/compliance.html" class="hover:text-slate-900">Compliance & Corporate Law</a></li>
             </ul>
         </div>
         <div>
             <h4 class="font-semibold">Company</h4>
             <ul class="mt-3 space-y-2 text-sm text-slate-600">
-                <li><a class="hover:text-slate-900" href="/about.html">About</a></li>
-                <li><a class="hover:text-slate-900" href="/resources.html">Resources</a></li>
-                <li><a class="hover:text-slate-900" href="/pricing.html">Pricing</a></li>
-                <li><a class="hover:text-slate-900" href="/contact.html">Contact</a></li>
+                <li><a href="/about.html" class="hover:text-slate-900">About</a></li>
+                <li><a href="/resources.html" class="hover:text-slate-900">Resources</a></li>
+                <li><a href="/pricing.html" class="hover:text-slate-900">Pricing</a></li>
+                <li><a href="/contact.html" class="hover:text-slate-900">Contact</a></li>
             </ul>
         </div>
         <div>
             <h4 class="font-semibold">Contact</h4>
             <p class="mt-3 text-sm text-slate-600">
-                Office No. 205, 2nd Floor, Apollo Arcade,
+                Office No. 205, 2nd Floor, Apollo Arcade,<br>
                 1/2 Old Palasia, Indore, Madhya Pradesh – 452001, India<br>
                 +91-95755-15735<br>
                 <a class="underline" href="mailto:contact@filingsense.com">contact@filingsense.com</a>
@@ -196,25 +244,15 @@
         <span class="mx-2">•</span><a class="underline" href="/terms.html">Terms</a>
     </div>
 </footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<script>
-  (function(){
-    const path = location.pathname;
-    const links = document.querySelectorAll('nav a[href]');
-    links.forEach(a => {
-      const href = a.getAttribute('href');
-      if (!href) return;
-      // highlight services group
-      if (path.startsWith('/services/') && a.textContent.trim() === 'Pricing' === false && a.textContent.trim() === 'Services') {
-        a.classList.add('text-slate-900', 'font-semibold');
-      }
-      // exact match for others
-      if (href === path) {
-        a.classList.add('text-slate-900','font-semibold');
-      }
-    });
-  })();
-</script>
 
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/919575515735?text=Hi%20FilingSense%2C%20I%20need%20help%20with%20GST%20or%20Income%20Tax" class="fixed bottom-5 right-5 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] shadow-lg hover:shadow-xl transition" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path fill="white" d="M20.52 3.48A11.94 11.94 0 0 0 12.02 0C5.39 0 .02 5.37.02 12c0 2.11.55 4.16 1.6 5.97L0 24l6.2-1.6A11.95 11.95 0 0 0 12.02 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.2-3.5-8.52zM12.02 22c-1.86 0-3.67-.5-5.26-1.45l-.38-.23-3.7.96.99-3.6-.25-.37A9.93 9.93 0 0 1 2.02 12c0-5.5 4.48-9.98 10-9.98 2.67 0 5.18 1.04 7.07 2.93A9.96 9.96 0 0 1 22 12c0 5.52-4.48 10-9.98 10z"/>
+        <path fill="white" d="M17.07 14.17c-.1-.05-1.66-.82-1.92-.91-.26-.1-.45-.14-.63.14-.19.28-.73.9-.89 1.08-.16.18-.33.2-.61.07-.28-.14-1.2-.44-2.28-1.39-.84-.75-1.41-1.68-1.57-1.96-.16-.28-.02-.43.12-.57.12-.12.28-.31.4-.46.14-.15.19-.26.28-.44.09-.19.05-.35-.02-.49-.07-.14-.63-1.51-.86-2.07-.23-.56-.47-.49-.64-.5-.16-.01-.35-.01-.54-.01-.19 0-.5.07-.76.35-.26.28-1 1-1 2.43 0 1.42 1.03 2.8 1.18 3 .14.19 2 3.04 4.84 4.26.68.29 1.21.46 1.62.58.68.21 1.3.19 1.78.11.55-.08 1.64-.67 1.87-1.32.23-.65.23-1.2.16-1.32-.07-.12-.26-.19-.54-.33z"/>
+    </svg>
+</a>
 </body>
 </html>
