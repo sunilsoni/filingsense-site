@@ -13,5 +13,24 @@
     <p class="mt-3 text-slate-600">We’ve received your message. We’ll get back to you soon.</p>
     <a class="mt-6 inline-block px-5 py-3 rounded-xl bg-slate-900 text-white" href="/">Back to Home</a>
 </section>
+<script>
+  (function(){
+    const path = location.pathname;
+    const links = document.querySelectorAll('nav a[href]');
+    links.forEach(a => {
+      const href = a.getAttribute('href');
+      if (!href) return;
+      // highlight services group
+      if (path.startsWith('/services/') && a.textContent.trim() === 'Pricing' === false && a.textContent.trim() === 'Services') {
+        a.classList.add('text-slate-900', 'font-semibold');
+      }
+      // exact match for others
+      if (href === path) {
+        a.classList.add('text-slate-900','font-semibold');
+      }
+    });
+  })();
+</script>
+
 </body>
 </html>

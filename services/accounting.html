@@ -49,6 +49,7 @@
     </script>
 </head>
 <body class="bg-white text-slate-800">
+
 <!-- HEADER with Services dropdown -->
 <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b">
     <div class="mx-auto container-max px-4 py-3 flex items-center justify-between">
@@ -151,6 +152,8 @@
     </div>
 </header>
 
+
+
 <section class="mx-auto container-max px-4 py-12">
     <h1 class="display text-4xl md:text-5xl text-slate-900">Accounting & Bookkeeping</h1>
     <div class="mt-6 prose prose-slate max-w-none">
@@ -214,5 +217,24 @@
     </div>
 </footer>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+  (function(){
+    const path = location.pathname;
+    const links = document.querySelectorAll('nav a[href]');
+    links.forEach(a => {
+      const href = a.getAttribute('href');
+      if (!href) return;
+      // highlight services group
+      if (path.startsWith('/services/') && a.textContent.trim() === 'Pricing' === false && a.textContent.trim() === 'Services') {
+        a.classList.add('text-slate-900', 'font-semibold');
+      }
+      // exact match for others
+      if (href === path) {
+        a.classList.add('text-slate-900','font-semibold');
+      }
+    });
+  })();
+</script>
+
 </body>
 </html>

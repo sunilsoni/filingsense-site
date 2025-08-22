@@ -14,12 +14,108 @@
     }</style>
 </head>
 <body class="bg-white text-slate-800">
-<header class="border-b">
-    <div class="mx-auto max-w-4xl px-4 py-4 flex items-center justify-between">
-        <a class="font-extrabold" href="/">FilingSense</a>
-        <nav class="text-sm"><a class="underline" href="/resources.html">← Back to resources</a></nav>
+<!-- HEADER with Services dropdown -->
+<header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b">
+    <div class="mx-auto container-max px-4 py-3 flex items-center justify-between">
+        <!-- Brand -->
+        <a href="/" class="flex items-center gap-3">
+            <img src="/assets/logo.svg" alt="FilingSense logo" class="h-9 w-9"/>
+            <span class="font-extrabold text-slate-900">FilingSense</span>
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+            <!-- Services dropdown (desktop) -->
+            <div class="relative group">
+                <button
+                        class="inline-flex items-center gap-1 hover:text-slate-900"
+                        aria-haspopup="true" aria-expanded="false">
+                    Services
+                    <svg class="w-4 h-4 opacity-70" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.096l3.71-3.866a.75.75 0 111.08 1.04l-4.24 4.42a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <!-- Dropdown panel -->
+                <div
+                        class="absolute left-0 mt-3 w-[420px] rounded-2xl border bg-white shadow-lg p-3
+                 opacity-0 pointer-events-none translate-y-1 transition
+                 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0">
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <a href="/services/taxation.html" class="block p-3 rounded-xl hover:bg-slate-50">
+                            <div class="font-semibold text-slate-900">Taxation (GST & IT)</div>
+                            <div class="text-slate-600 mt-0.5">Returns, planning, notices</div>
+                        </a>
+                        <a href="/services/accounting.html" class="block p-3 rounded-xl hover:bg-slate-50">
+                            <div class="font-semibold text-slate-900">Accounting & Bookkeeping</div>
+                            <div class="text-slate-600 mt-0.5">Monthly books, MIS</div>
+                        </a>
+                        <a href="/services/audit.html" class="block p-3 rounded-xl hover:bg-slate-50">
+                            <div class="font-semibold text-slate-900">Auditing & Assurance</div>
+                            <div class="text-slate-600 mt-0.5">Statutory, internal audits</div>
+                        </a>
+                        <a href="/services/incorporation.html" class="block p-3 rounded-xl hover:bg-slate-50">
+                            <div class="font-semibold text-slate-900">Company Formation</div>
+                            <div class="text-slate-600 mt-0.5">Pvt Ltd / LLP / OPC</div>
+                        </a>
+                        <a href="/services/compliance.html" class="block p-3 rounded-xl hover:bg-slate-50">
+                            <div class="font-semibold text-slate-900">Compliance & Corporate Law</div>
+                            <div class="text-slate-600 mt-0.5">ROC, FCRA, governance</div>
+                        </a>
+                        <a href="/services/advisory.html" class="block p-3 rounded-xl hover:bg-slate-50">
+                            <div class="font-semibold text-slate-900">Business Advisory</div>
+                            <div class="text-slate-600 mt-0.5">Strategy & performance</div>
+                        </a>
+                    </div>
+                    <div class="mt-2 px-2">
+                        <a href="/contact.html" class="inline-flex items-center gap-2 text-xs px-3 py-2 rounded-lg bg-slate-900 text-white hover:opacity-90">
+                            Talk to a CA
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="/pricing.html" class="hover:text-slate-900">Pricing</a>
+            <a href="/resources.html" class="hover:text-slate-900">Resources</a>
+            <a href="/about.html" class="hover:text-slate-900">About</a>
+            <a href="/contact.html" class="hover:text-slate-900">Contact</a>
+            <a href="https://wa.me/919575515735" class="px-4 py-2 rounded-xl bg-slate-900 text-white hover:opacity-90">WhatsApp Us</a>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <button class="md:hidden p-2 rounded-lg border" onclick="document.getElementById('mnav').classList.toggle('hidden')" aria-label="Open menu">
+            Menu
+        </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mnav" class="md:hidden hidden border-t bg-white">
+        <div class="mx-auto container-max px-4 py-2 text-sm">
+            <!-- Services accordion (mobile) -->
+            <details class="border-b py-2">
+                <summary class="cursor-pointer font-medium flex items-center justify-between">
+                    Services
+                    <span class="ml-3">▾</span>
+                </summary>
+                <div class="mt-2 grid grid-cols-1">
+                    <a href="/services/taxation.html" class="py-2 pl-3 block hover:bg-slate-50 rounded-lg">Taxation (GST & IT)</a>
+                    <a href="/services/accounting.html" class="py-2 pl-3 block hover:bg-slate-50 rounded-lg">Accounting & Bookkeeping</a>
+                    <a href="/services/audit.html" class="py-2 pl-3 block hover:bg-slate-50 rounded-lg">Auditing & Assurance</a>
+                    <a href="/services/incorporation.html" class="py-2 pl-3 block hover:bg-slate-50 rounded-lg">Company Formation</a>
+                    <a href="/services/compliance.html" class="py-2 pl-3 block hover:bg-slate-50 rounded-lg">Compliance & Corporate Law</a>
+                    <a href="/services/advisory.html" class="py-2 pl-3 block hover:bg-slate-50 rounded-lg">Business Advisory</a>
+                </div>
+            </details>
+
+            <a href="/pricing.html" class="py-2 block">Pricing</a>
+            <a href="/resources.html" class="py-2 block">Resources</a>
+            <a href="/about.html" class="py-2 block">About</a>
+            <a href="/contact.html" class="py-2 block">Contact</a>
+            <a href="https://wa.me/919575515735" class="py-2 block">WhatsApp Us</a>
+        </div>
     </div>
 </header>
+
 <main class="mx-auto max-w-4xl px-4 py-10">
     <h1 class="display text-3xl md:text-4xl font-extrabold">Private Limited vs LLP vs OPC (2025)</h1>
     <p class="mt-2 text-slate-600">Pick the right entity for taxes, compliance & fundraising.</p>
@@ -62,5 +158,24 @@
         <a class="px-5 py-3 rounded-xl border" href="/services/incorporation.html">Incorporation services</a>
     </div>
 </main>
+<script>
+  (function(){
+    const path = location.pathname;
+    const links = document.querySelectorAll('nav a[href]');
+    links.forEach(a => {
+      const href = a.getAttribute('href');
+      if (!href) return;
+      // highlight services group
+      if (path.startsWith('/services/') && a.textContent.trim() === 'Pricing' === false && a.textContent.trim() === 'Services') {
+        a.classList.add('text-slate-900', 'font-semibold');
+      }
+      // exact match for others
+      if (href === path) {
+        a.classList.add('text-slate-900','font-semibold');
+      }
+    });
+  })();
+</script>
+
 </body>
 </html>
