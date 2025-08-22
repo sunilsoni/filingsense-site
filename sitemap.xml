@@ -1,84 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Main pages -->
     <url>
         <loc>https://filingsense.com/</loc>
-        <lastmod>2025-08-23</lastmod>
+        <lastmod>2025-08-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://filingsense.com/#services</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://filingsense.com/pricing.html</loc>
-        <lastmod>2025-08-23</lastmod>
+        <lastmod>2025-08-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://filingsense.com/resources.html</loc>
-        <lastmod>2025-08-23</lastmod>
+        <lastmod>2025-08-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://filingsense.com/about.html</loc>
-        <lastmod>2025-08-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://filingsense.com/contact.html</loc>
-        <lastmod>2025-08-23</lastmod>
+        <lastmod>2025-08-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://filingsense.com/privacy.html</loc>
-        <lastmod>2025-08-23</lastmod>
+        <lastmod>2025-08-22</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.4</priority>
     </url>
     <url>
         <loc>https://filingsense.com/terms.html</loc>
-        <lastmod>2025-08-23</lastmod>
+        <lastmod>2025-08-22</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.4</priority>
     </url>
 
     <!-- Services -->
     <url>
         <loc>https://filingsense.com/services/taxation.html</loc>
-        <lastmod>2025-08-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://filingsense.com/services/accounting.html</loc>
-        <lastmod>2025-08-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://filingsense.com/services/audit.html</loc>
-        <lastmod>2025-08-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://filingsense.com/services/incorporation.html</loc>
-        <lastmod>2025-08-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://filingsense.com/services/compliance.html</loc>
-        <lastmod>2025-08-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://filingsense.com/services/advisory.html</loc>
-        <lastmod>2025-08-23</lastmod>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Taxation Deep Dives -->
+    <url>
+        <loc>https://filingsense.com/services/taxation/gst-registration.html</loc>
+        <lastmod>2025-08-22</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://filingsense.com/services/taxation/tds.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://filingsense.com/services/taxation/itr.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
 </urlset>
