@@ -78,22 +78,20 @@
 
         <!-- Desktop nav -->
         <nav class="hidden md:flex items-center gap-6 text-sm">
-            <!-- Services dropdown (desktop) -->
-            <div class="relative group">
-                <button
+            <div class="relative" id="servicesWrapper">
+                <button id="servicesMenu"
+                        type="button"
                         class="inline-flex items-center gap-1 hover:text-slate-900"
-                        aria-haspopup="true" aria-expanded="false">
+                        aria-haspopup="true" aria-expanded="false" aria-controls="servicesPanel">
                     Services
                     <svg class="w-4 h-4 opacity-70" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.096l3.71-3.866a.75.75 0 111.08 1.04l-4.24 4.42a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
                     </svg>
                 </button>
 
-                <!-- Dropdown panel -->
-                <div
-                        class="absolute left-0 mt-3 w-[420px] rounded-2xl border bg-white shadow-lg p-3
-                 opacity-0 pointer-events-none translate-y-1 transition
-                 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0">
+                <!-- IMPORTANT: no pointer-events-none, use hidden instead -->
+                <div id="servicesPanel"
+                     class="hidden absolute left-0 mt-3 w-[420px] rounded-2xl border bg-white shadow-lg p-3 z-50">
                     <div class="grid grid-cols-2 gap-2 text-sm">
                         <a href="/services/taxation.html" class="block p-3 rounded-xl hover:bg-slate-50">
                             <div class="font-semibold text-slate-900">Taxation (GST & IT)</div>
@@ -121,18 +119,13 @@
                         </a>
                     </div>
                     <div class="mt-2 px-2">
-                        <a href="/contact.html" class="inline-flex items-center gap-2 text-xs px-3 py-2 rounded-lg bg-slate-900 text-white hover:opacity-90">
+                        <a href="/contact.html"
+                           class="inline-flex items-center gap-2 text-xs px-3 py-2 rounded-lg bg-slate-900 text-white hover:opacity-90">
                             Talk to a CA
                         </a>
                     </div>
                 </div>
             </div>
-
-            <a href="/pricing.html" class="hover:text-slate-900">Pricing</a>
-            <a href="/resources.html" class="hover:text-slate-900">Resources</a>
-            <a href="/about.html" class="hover:text-slate-900">About</a>
-            <a href="/contact.html" class="hover:text-slate-900">Contact</a>
-            <a href="https://wa.me/919575515735" class="px-4 py-2 rounded-xl bg-slate-900 text-white hover:opacity-90">WhatsApp Us</a>
         </nav>
 
         <!-- Mobile menu button -->
