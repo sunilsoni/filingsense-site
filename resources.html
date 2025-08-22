@@ -7,7 +7,6 @@
     <meta name="description" content="Guides, checklists, and due dates for GST, Income Tax, Compliance, and Startup essentials.">
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="FilingSense Resources">
     <meta property="og:description" content="Practical guides, templates, and deadlines for GST, IT, and compliance.">
     <meta property="og:url" content="https://filingsense.com/resources.html">
@@ -18,20 +17,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: { brand: '#0f172a', accent: '#0ea5a4', accent2: '#047857' }
-                }
-            }
-        }
+        tailwind.config = { theme: { extend: { colors: { brand:'#0f172a', accent:'#0ea5a4', accent2:'#047857' }}}}
     </script>
     <style>
         :root { --brand:#0f172a; --accent:#0ea5a4; }
         body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans"; }
         .display { font-family: "Playfair Display", serif; }
         .container-max { max-width: 1200px; }
-        .tag-active { background-color: #0ea5a4; color: white; border-color: transparent; }
+        .tag-active { background-color:#0ea5a4; color:#fff; border-color:transparent; }
     </style>
 </head>
 <body class="bg-white text-slate-800">
@@ -97,7 +90,6 @@
 <section class="mx-auto container-max px-4 pb-16">
     <div id="grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <!-- Resource Card -->
         <article class="resource card block p-6 rounded-2xl border hover:shadow transition"
                  data-tags="gst,compliance" data-title="New GST Registration Checklist" data-desc="Documents, eligibility, timelines">
             <div class="flex items-start justify-between gap-3">
@@ -109,7 +101,7 @@
                 <span class="px-2 py-1 rounded-full bg-slate-100">GST</span>
                 <span class="px-2 py-1 rounded-full bg-slate-100">Checklist</span>
             </div>
-            <a href="#" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
+            <a href="/resources/gst-registration-checklist.html" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
         </article>
 
         <article class="resource card block p-6 rounded-2xl border hover:shadow transition"
@@ -123,7 +115,7 @@
                 <span class="px-2 py-1 rounded-full bg-slate-100">Income Tax</span>
                 <span class="px-2 py-1 rounded-full bg-slate-100">Calendar</span>
             </div>
-            <a href="#" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
+            <a href="/resources/income-tax-due-dates-fy-2025-26.html" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
         </article>
 
         <article class="resource card block p-6 rounded-2xl border hover:shadow transition"
@@ -137,7 +129,7 @@
                 <span class="px-2 py-1 rounded-full bg-slate-100">GST</span>
                 <span class="px-2 py-1 rounded-full bg-slate-100">How‑to</span>
             </div>
-            <a href="#" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
+            <a href="/resources/gstr1-gstr3b-filing-guide.html" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
         </article>
 
         <article class="resource card block p-6 rounded-2xl border hover:shadow transition"
@@ -151,7 +143,7 @@
                 <span class="px-2 py-1 rounded-full bg-slate-100">Startup</span>
                 <span class="px-2 py-1 rounded-full bg-slate-100">Incorporation</span>
             </div>
-            <a href="#" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
+            <a href="/resources/private-limited-vs-llp-vs-opc-2025.html" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
         </article>
 
         <article class="resource card block p-6 rounded-2xl border hover:shadow transition"
@@ -165,7 +157,7 @@
                 <span class="px-2 py-1 rounded-full bg-slate-100">Compliance</span>
                 <span class="px-2 py-1 rounded-full bg-slate-100">Checklist</span>
             </div>
-            <a href="#" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
+            <a href="/resources/roc-annual-filing-checklist.html" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
         </article>
 
         <article class="resource card block p-6 rounded-2xl border hover:shadow transition"
@@ -179,12 +171,11 @@
                 <span class="px-2 py-1 rounded-full bg-slate-100">Income Tax</span>
                 <span class="px-2 py-1 rounded-full bg-slate-100">Startup</span>
             </div>
-            <a href="#" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
+            <a href="/resources/startup-founders-personal-tax-101.html" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
         </article>
 
     </div>
 
-    <!-- Empty state -->
     <div id="empty" class="hidden text-center text-slate-500 mt-6">
         No results. Try different keywords or tags.
     </div>
@@ -257,40 +248,28 @@
 </footer>
 
 <script>
-    // year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Tag + search filter
     const btns = Array.from(document.querySelectorAll('[data-tag]'));
     const cards = Array.from(document.querySelectorAll('.resource.card'));
     const search = document.getElementById('search');
     const empty = document.getElementById('empty');
-
     let activeTag = 'all';
 
     function applyFilters() {
         const q = (search.value || '').toLowerCase().trim();
         let visible = 0;
-
         cards.forEach(card => {
             const tags = card.getAttribute('data-tags') || '';
             const title = (card.getAttribute('data-title') || '').toLowerCase();
             const desc  = (card.getAttribute('data-desc')  || '').toLowerCase();
-
             const tagOK = (activeTag === 'all') || tags.split(',').map(t => t.trim()).includes(activeTag);
             const textOK = !q || title.includes(q) || desc.includes(q);
-
-            if (tagOK && textOK) {
-                card.classList.remove('hidden');
-                visible++;
-            } else {
-                card.classList.add('hidden');
-            }
+            if (tagOK && textOK) { card.classList.remove('hidden'); visible++; }
+            else { card.classList.add('hidden'); }
         });
-
         empty.classList.toggle('hidden', visible !== 0);
     }
-
     btns.forEach(b => {
         b.addEventListener('click', () => {
             activeTag = b.getAttribute('data-tag');
@@ -299,9 +278,7 @@
             applyFilters();
         });
     });
-
     search.addEventListener('input', applyFilters);
-    // default: All active
     document.querySelector('[data-tag="all"]').classList.add('tag-active');
     applyFilters();
 </script>
