@@ -1,116 +1,321 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FilingSense | Your Trusted Filing Partner</title>
-  <meta name="description" content="Auditing & Assurance, GST & Income Tax, Accounting & Bookkeeping, Company Formation, Payroll, Corporate Law, Compliance, and CFO services.">
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root { --brand:#0f172a; --accent:#0ea5a4; }
-    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans"; }
-    .display { font-family: "Playfair Display", serif; }
-    .container-max { max-width: 1200px; }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resources | FilingSense</title>
+    <meta name="description" content="Guides, checklists, and due dates for GST, Income Tax, Compliance, and Startup essentials.">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FilingSense Resources">
+    <meta property="og:description" content="Practical guides, templates, and deadlines for GST, IT, and compliance.">
+    <meta property="og:url" content="https://filingsense.com/resources.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://filingsense.com/assets/logo.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: '#0f172a', accent: '#0ea5a4', accent2: '#047857' }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root { --brand:#0f172a; --accent:#0ea5a4; }
+        body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans"; }
+        .display { font-family: "Playfair Display", serif; }
+        .container-max { max-width: 1200px; }
+        .tag-active { background-color: #0ea5a4; color: white; border-color: transparent; }
+    </style>
 </head>
 <body class="bg-white text-slate-800">
-  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b">
     <div class="mx-auto container-max px-4 py-3 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-3">
-        <img src="/assets/logo.svg" alt="FilingSense logo" class="h-9 w-9"/>
-        <span class="font-extrabold text-slate-900">FilingSense</span>
-      </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="/#services" class="hover:text-slate-900">Services</a>
-        <a href="/pricing.html" class="hover:text-slate-900">Pricing</a>
-        <a href="/resources.html" class="hover:text-slate-900">Resources</a>
-        <a href="/about.html" class="hover:text-slate-900">About</a>
-        <a href="/contact.html" class="hover:text-slate-900">Contact</a>
-        <a href="https://wa.me/919575515735" class="px-4 py-2 rounded-xl bg-slate-900 text-white">WhatsApp Us</a>
-      </nav>
-      <button class="md:hidden p-2 rounded-lg border" onclick="document.getElementById('mnav').classList.toggle('hidden')">Menu</button>
+        <a href="/" class="flex items-center gap-3">
+            <img src="/assets/logo.svg" alt="FilingSense logo" class="h-9 w-9"/>
+            <span class="font-extrabold text-slate-900">FilingSense</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+            <a href="/#services" class="hover:text-brand">Services</a>
+            <a href="/pricing.html" class="hover:text-brand">Pricing</a>
+            <a href="/resources.html" class="hover:text-brand">Resources</a>
+            <a href="/about.html" class="hover:text-brand">About</a>
+            <a href="/contact.html" class="hover:text-brand">Contact</a>
+            <a href="https://wa.me/919575515735" class="px-4 py-2 rounded-xl bg-brand text-white hover:opacity-90">WhatsApp Us</a>
+        </nav>
+        <button class="md:hidden p-2 rounded-lg border" onclick="document.getElementById('mnav').classList.toggle('hidden')" aria-label="Open menu">Menu</button>
     </div>
     <div id="mnav" class="md:hidden hidden border-t bg-white">
-      <div class="mx-auto container-max px-4 py-2 flex flex-col gap-2 text-sm">
-        <a href="/#services" class="py-2">Services</a>
-        <a href="/pricing.html" class="py-2">Pricing</a>
-        <a href="/resources.html" class="py-2">Resources</a>
-        <a href="/about.html" class="py-2">About</a>
-        <a href="/contact.html" class="py-2">Contact</a>
-        <a href="https://wa.me/919575515735" class="py-2">WhatsApp Us</a>
-      </div>
+        <div class="mx-auto container-max px-4 py-2 flex flex-col gap-2 text-sm">
+            <a href="/#services" class="py-2">Services</a>
+            <a href="/pricing.html" class="py-2">Pricing</a>
+            <a href="/resources.html" class="py-2">Resources</a>
+            <a href="/about.html" class="py-2">About</a>
+            <a href="/contact.html" class="py-2">Contact</a>
+            <a href="https://wa.me/919575515735" class="py-2">WhatsApp Us</a>
+        </div>
     </div>
-  </header>
+</header>
 
-  <section class="mx-auto container-max px-4 py-12">
+<!-- HERO -->
+<section class="mx-auto container-max px-4 pt-10 pb-6">
     <h1 class="display text-4xl md:text-5xl text-slate-900">Resources</h1>
-    <div class="mt-6 prose prose-slate max-w-none">
-      
-<div class="grid md:grid-cols-2 gap-6 not-prose">
-  <a class="block p-6 rounded-2xl border hover:shadow" href="#">
-    <h3 class="font-semibold">New GST Registration Checklist</h3>
-    <p class="text-sm text-slate-600 mt-1">Documents, eligibility, and timelines.</p>
-  </a>
-  <a class="block p-6 rounded-2xl border hover:shadow" href="#">
-    <h3 class="font-semibold">Income Tax Due Dates (FY 2025-26)</h3>
-    <p class="text-sm text-slate-600 mt-1">Stay ahead with key deadlines.</p>
-  </a>
-</div>
+    <p class="mt-3 text-slate-600 max-w-2xl">
+        Practical guides, checklists, and deadlines for GST, Income Tax, Compliance, and Startup essentials.
+    </p>
+</section>
+
+<!-- SEARCH + TAGS -->
+<section class="mx-auto container-max px-4 pb-4">
+    <div class="flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+        <div class="relative w-full md:w-1/2">
+            <input id="search" type="text" placeholder="Search resources (e.g., GST registration, due dates, TDS)…"
+                   class="w-full rounded-2xl border px-4 py-3 pr-10" />
+            <svg class="w-5 h-5 absolute right-3 top-3.5 text-slate-400" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="flex flex-wrap gap-2">
+            <button class="px-3 py-2 rounded-xl border text-sm" data-tag="all">All</button>
+            <button class="px-3 py-2 rounded-xl border text-sm" data-tag="gst">GST</button>
+            <button class="px-3 py-2 rounded-xl border text-sm" data-tag="income-tax">Income Tax</button>
+            <button class="px-3 py-2 rounded-xl border text-sm" data-tag="compliance">Compliance</button>
+            <button class="px-3 py-2 rounded-xl border text-sm" data-tag="startup">Startup</button>
+        </div>
+    </div>
+</section>
+
+<!-- CARDS -->
+<section class="mx-auto container-max px-4 pb-16">
+    <div id="grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Resource Card -->
+        <article class="resource card block p-6 rounded-2xl border hover:shadow transition"
+                 data-tags="gst,compliance" data-title="New GST Registration Checklist" data-desc="Documents, eligibility, timelines">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="font-semibold text-lg text-slate-900">New GST Registration Checklist</h3>
+                <span class="text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-600">Updated Aug 2025</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Documents required, eligibility criteria, and processing timelines.</p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 rounded-full bg-slate-100">GST</span>
+                <span class="px-2 py-1 rounded-full bg-slate-100">Checklist</span>
+            </div>
+            <a href="#" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
+        </article>
+
+        <article class="resource card block p-6 rounded-2xl border hover:shadow transition"
+                 data-tags="income-tax,compliance" data-title="Income Tax Due Dates FY 2025-26" data-desc="TDS, advance tax, ITR deadlines">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="font-semibold text-lg text-slate-900">Income Tax Due Dates (FY 2025–26)</h3>
+                <span class="text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-600">Updated Aug 2025</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Key deadlines for TDS, advance tax, and ITR filings—never miss a date.</p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 rounded-full bg-slate-100">Income Tax</span>
+                <span class="px-2 py-1 rounded-full bg-slate-100">Calendar</span>
+            </div>
+            <a href="#" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
+        </article>
+
+        <article class="resource card block p-6 rounded-2xl border hover:shadow transition"
+                 data-tags="gst,compliance" data-title="GSTR-1 & GSTR-3B Filing Guide" data-desc="Monthly filing, reconciliation, errors">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="font-semibold text-lg text-slate-900">GSTR‑1 & GSTR‑3B Filing Guide</h3>
+                <span class="text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-600">Updated Aug 2025</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Step‑by‑step monthly filing, reconciliation tips, and common error fixes.</p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 rounded-full bg-slate-100">GST</span>
+                <span class="px-2 py-1 rounded-full bg-slate-100">How‑to</span>
+            </div>
+            <a href="#" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
+        </article>
+
+        <article class="resource card block p-6 rounded-2xl border hover:shadow transition"
+                 data-tags="startup,compliance" data-title="Private Limited vs LLP vs OPC" data-desc="Entity comparison, taxes, compliance">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="font-semibold text-lg text-slate-900">Private Limited vs LLP vs OPC (2025)</h3>
+                <span class="text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-600">Updated Aug 2025</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Entity comparison—taxation, compliance burden, costs, and who should pick what.</p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 rounded-full bg-slate-100">Startup</span>
+                <span class="px-2 py-1 rounded-full bg-slate-100">Incorporation</span>
+            </div>
+            <a href="#" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
+        </article>
+
+        <article class="resource card block p-6 rounded-2xl border hover:shadow transition"
+                 data-tags="compliance" data-title="ROC Annual Filing Checklist" data-desc="AOC-4, MGT-7, due dates">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="font-semibold text-lg text-slate-900">ROC Annual Filing Checklist</h3>
+                <span class="text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-600">Updated Aug 2025</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">AOC‑4, MGT‑7/7A, director disclosures, and board compliance in one list.</p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 rounded-full bg-slate-100">Compliance</span>
+                <span class="px-2 py-1 rounded-full bg-slate-100">Checklist</span>
+            </div>
+            <a href="#" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
+        </article>
+
+        <article class="resource card block p-6 rounded-2xl border hover:shadow transition"
+                 data-tags="income-tax,startup" data-title="Startup Founders: Personal Tax 101" data-desc="Salary vs dividend vs draw">
+            <div class="flex items-start justify-between gap-3">
+                <h3 class="font-semibold text-lg text-slate-900">Startup Founders: Personal Tax 101</h3>
+                <span class="text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-600">Updated Aug 2025</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Salary vs. dividend vs. proprietor draw—optimize taxes without risk.</p>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                <span class="px-2 py-1 rounded-full bg-slate-100">Income Tax</span>
+                <span class="px-2 py-1 rounded-full bg-slate-100">Startup</span>
+            </div>
+            <a href="#" class="mt-4 inline-block text-sm underline hover:text-brand">Read →</a>
+        </article>
 
     </div>
-  </section>
 
-  <footer class="border-t">
+    <!-- Empty state -->
+    <div id="empty" class="hidden text-center text-slate-500 mt-6">
+        No results. Try different keywords or tags.
+    </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="mx-auto container-max px-4 pb-20">
+    <div class="p-8 bg-slate-50 rounded-2xl border">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+                <h3 class="text-xl font-bold">Want a custom guide for your business?</h3>
+                <p class="text-slate-600 mt-1">Tell us your GST/IT situation—we’ll send a tailored checklist.</p>
+            </div>
+            <div class="flex gap-3">
+                <a class="px-5 py-3 rounded-xl bg-brand text-white hover:opacity-90" href="/contact.html">Ask an Expert</a>
+                <a class="px-5 py-3 rounded-xl border border-slate-300 hover:bg-slate-50" href="https://wa.me/919575515735">WhatsApp Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t">
     <div class="mx-auto container-max px-4 py-12 grid md:grid-cols-4 gap-8">
-      <div>
-        <div class="flex items-center gap-3">
-          <img src="/assets/logo.svg" class="h-9 w-9" alt="FilingSense logo" />
-          <span class="font-extrabold">FilingSense</span>
+        <div>
+            <div class="flex items-center gap-3">
+                <img src="/assets/logo.svg" class="h-9 w-9" alt="FilingSense logo" />
+                <span class="font-extrabold">FilingSense</span>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">Your trusted filing partner.</p>
         </div>
-        <p class="mt-3 text-sm text-slate-600">Your trusted filing partner.</p>
-      </div>
-      <div>
-        <h4 class="font-semibold">Services</h4>
-        <ul class="mt-3 space-y-2 text-sm text-slate-600">
-          <li><a href="/services/taxation.html" class="hover:text-slate-900">Taxation (GST & IT)</a></li>
-          <li><a href="/services/accounting.html" class="hover:text-slate-900">Accounting & Bookkeeping</a></li>
-          <li><a href="/services/audit.html" class="hover:text-slate-900">Auditing & Assurance</a></li>
-          <li><a href="/services/incorporation.html" class="hover:text-slate-900">Company Formation</a></li>
-          <li><a href="/services/compliance.html" class="hover:text-slate-900">Compliance & Corporate Law</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold">Company</h4>
-        <ul class="mt-3 space-y-2 text-sm text-slate-600">
-          <li><a href="/about.html" class="hover:text-slate-900">About</a></li>
-          <li><a href="/resources.html" class="hover:text-slate-900">Resources</a></li>
-          <li><a href="/pricing.html" class="hover:text-slate-900">Pricing</a></li>
-          <li><a href="/contact.html" class="hover:text-slate-900">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold">Contact</h4>
-        <p class="mt-3 text-sm text-slate-600">
-            Office No. 205, 2nd Floor, Apollo Arcade,
-            1/2 Old Palasia, Indore, Madhya Pradesh – 452001, India<br>
-          +91-95755-15735<br>
-          <a class="underline" href="mailto:contact@filingsense.com">contact@filingsense.com</a>
-        </p>
-        <div class="mt-3 flex gap-3">
-          <a class="underline" href="https://wa.me/919575515735">WhatsApp</a>
-          <a class="underline" href="https://calendly.com/your-link">Book a Call</a>
+        <div>
+            <h4 class="font-semibold">Services</h4>
+            <ul class="mt-3 space-y-2 text-sm text-slate-600">
+                <li><a href="/services/taxation.html" class="hover:text-brand">Taxation (GST & IT)</a></li>
+                <li><a href="/services/accounting.html" class="hover:text-brand">Accounting & Bookkeeping</a></li>
+                <li><a href="/services/audit.html" class="hover:text-brand">Auditing & Assurance</a></li>
+                <li><a href="/services/incorporation.html" class="hover:text-brand">Company Formation</a></li>
+                <li><a href="/services/compliance.html" class="hover:text-brand">Compliance & Corporate Law</a></li>
+            </ul>
         </div>
-      </div>
+        <div>
+            <h4 class="font-semibold">Company</h4>
+            <ul class="mt-3 space-y-2 text-sm text-slate-600">
+                <li><a href="/about.html" class="hover:text-brand">About</a></li>
+                <li><a href="/resources.html" class="hover:text-brand">Resources</a></li>
+                <li><a href="/pricing.html" class="hover:text-brand">Pricing</a></li>
+                <li><a href="/contact.html" class="hover:text-brand">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-semibold">Contact</h4>
+            <p class="mt-3 text-sm text-slate-600">
+                Office No. 205, 2nd Floor, Apollo Arcade,<br>
+                1/2 Old Palasia, Indore, Madhya Pradesh – 452001, India<br>
+                +91-95755-15735<br>
+                <a class="underline" href="mailto:contact@filingsense.com">contact@filingsense.com</a>
+            </p>
+            <div class="mt-3 flex gap-3">
+                <a class="underline" href="https://wa.me/919575515735">WhatsApp</a>
+                <a class="underline" href="https://calendly.com/your-link">Book a Call</a>
+            </div>
+        </div>
     </div>
     <div class="text-center text-xs text-slate-500 pb-8">
-      © <span id="year"></span> FilingSense. All rights reserved.
-      <span class="mx-2">•</span><a class="underline" href="/privacy.html">Privacy</a>
-      <span class="mx-2">•</span><a class="underline" href="/terms.html">Terms</a>
+        © <span id="year"></span> FilingSense. All rights reserved.
+        <span class="mx-2">•</span><a class="underline" href="/privacy.html">Privacy</a>
+        <span class="mx-2">•</span><a class="underline" href="/terms.html">Terms</a>
     </div>
-  </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+
+<script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Tag + search filter
+    const btns = Array.from(document.querySelectorAll('[data-tag]'));
+    const cards = Array.from(document.querySelectorAll('.resource.card'));
+    const search = document.getElementById('search');
+    const empty = document.getElementById('empty');
+
+    let activeTag = 'all';
+
+    function applyFilters() {
+        const q = (search.value || '').toLowerCase().trim();
+        let visible = 0;
+
+        cards.forEach(card => {
+            const tags = card.getAttribute('data-tags') || '';
+            const title = (card.getAttribute('data-title') || '').toLowerCase();
+            const desc  = (card.getAttribute('data-desc')  || '').toLowerCase();
+
+            const tagOK = (activeTag === 'all') || tags.split(',').map(t => t.trim()).includes(activeTag);
+            const textOK = !q || title.includes(q) || desc.includes(q);
+
+            if (tagOK && textOK) {
+                card.classList.remove('hidden');
+                visible++;
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+
+        empty.classList.toggle('hidden', visible !== 0);
+    }
+
+    btns.forEach(b => {
+        b.addEventListener('click', () => {
+            activeTag = b.getAttribute('data-tag');
+            btns.forEach(x => x.classList.remove('tag-active'));
+            b.classList.add('tag-active');
+            applyFilters();
+        });
+    });
+
+    search.addEventListener('input', applyFilters);
+    // default: All active
+    document.querySelector('[data-tag="all"]').classList.add('tag-active');
+    applyFilters();
+</script>
+
+<!-- Floating WhatsApp (optional) -->
+<a
+        href="https://wa.me/919575515735?text=Hi%20FilingSense%2C%20I%20need%20help%20with%20GST%20or%20Compliance"
+        class="fixed bottom-5 right-5 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] shadow-lg hover:shadow-xl transition"
+        target="_blank" rel="noopener"
+        aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path fill="white" d="M20.52 3.48A11.94 11.94 0 0 0 12.02 0C5.39 0 .02 5.37.02 12c0 2.11.55 4.16 1.6 5.97L0 24l6.2-1.6A11.95 11.95 0 0 0 12.02 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.2-3.5-8.52zM12.02 22c-1.86 0-3.67-.5-5.26-1.45l-.38-.23-3.7.96.99-3.6-.25-.37A9.93 9.93 0 0 1 2.02 12c0-5.5 4.48-9.98 10-9.98 2.67 0 5.18 1.04 7.07 2.93A9.96 9.96 0 0 1 22 12c0 5.52-4.48 10-9.98 10z"/>
+        <path fill="white" d="M17.07 14.17c-.1-.05-1.66-.82-1.92-.91-.26-.1-.45-.14-.63.14-.19.28-.73.9-.89 1.08-.16.18-.33.2-.61.07-.28-.14-1.2-.44-2.28-1.39-.84-.75-1.41-1.68-1.57-1.96-.16-.28-.02-.43.12-.57.12-.12.28-.31.4-.46.14-.15.19-.26.28-.44.09-.19.05-.35-.02-.49-.07-.14-.63-1.51-.86-2.07-.23-.56-.47-.49-.64-.5-.16-.01-.35-.01-.54-.01-.19 0-.5.07-.76.35-.26.28-1 1-1 2.43 0 1.42 1.03 2.8 1.18 3 .14.19 2 3.04 4.84 4.26.68.29 1.21.46 1.62.58.68.21 1.3.19 1.78.11.55-.08 1.64-.67 1.87-1.32.23-.65.23-1.2.16-1.32-.07-.12-.26-.19-.54-.33z"/>
+    </svg>
+</a>
 </body>
 </html>
